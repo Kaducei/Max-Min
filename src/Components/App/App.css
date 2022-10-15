@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap");
 *,
 *::before,
 *::after {
@@ -67,7 +68,7 @@ body {
   height: 100vh;
   overflow: hidden;
   transition: 2s;
-  font-family: cursive;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 2px;
   background: url(./tringle.jpg) no-repeat;
   background-size: cover;
