@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ul[class],
+ol[class] {
+  padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+для body */ body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+  transition: 2s;
+  font-family: cursive;
+  letter-spacing: 2px;
+  background: url(./tringle.jpg) no-repeat;
+  background-size: cover;
+}
+button {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+
+.mainInput {
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  border: none;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+.wrapper {
+  max-width: 400px;
+  margin: 50px auto;
+  position: relative;
+  height: 100%;
+  z-index: 2;
+}
+.submitButton {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  border-radius: 5px;
+  margin-left: 10px;
+  background: url("/src/Components/App/search.svg") 1% no-repeat;
+  background-size: cover;
+  transition: 0.5s;
+}
+.submitButton:hover {
+  opacity: 50%;
+  transition: 0.5s;
+}
+.result {
+  display: flex;
+  margin-top: 15px;
+  width: 120px;
+  height: 50px;
+}
+.result-value {
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  margin-right: 20px;
+  box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+}
+.result-arr {
+  margin-top: 20px;
+}
+.appName {
+  margin-bottom: 20px;
+}
+.mainInput:hover {
+  outline: 1px solid black;
+}
